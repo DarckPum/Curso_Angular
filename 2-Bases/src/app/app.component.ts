@@ -10,7 +10,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  public title: string = 'Hola mundo.';
+  /*public title: string = 'Hola mundo.';
   public counter: number = 10;
 
   public incrementar(value:number): void {
@@ -21,5 +21,5 @@ export class AppComponent {
   }
   public reset(): void {
     this.counter = 10;
-  }
+  }*/
 }
