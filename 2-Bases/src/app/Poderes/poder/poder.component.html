@@ -1,1 +1,40 @@
-<p>poder works!</p>
+<h1>{{ d }}</h1>
+
+<dl>
+  <td>Utilidad:</td>
+  <dd>{{ descu }}</dd>
+
+  <td>Peligro:</td>
+  <dd>{{ p }}</dd>
+
+  <td>Villanos:</td>
+  <dd>{{ v }}</dd>
+
+  <td>Metodo</td>
+  <dd>{{ getPoderDescripcion() }} </dd>
+</dl>
+
+<button
+  *ngIf="u !== 'Arma y fuerza'"
+  (click)="chageU()" class="btn btn-primary mx-3">
+  Cambiar Utilidad
+</button>
+
+<button
+  *ngIf="p !== 90"
+  (click)="changeP()" class="btn btn-primary mx-2">
+  Cambiar Peligro
+</button>
+
+<button
+  *ngIf="v !== 'El mismo'"
+  (click)="changeV()"
+  class="btn btn-primary">
+  Cambiar Villano
+</button>
+
+<button
+  (click)="resetFrom1"
+  class="btn btn-primary mx-2">
+  Reset
+</button>
