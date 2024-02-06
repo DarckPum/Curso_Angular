@@ -22,7 +22,7 @@ export class PoderComponent {
   }
 
   chageU(): void {
-    this.u = 'Arma y fuerza';
+    this.u = 'Armamento y fuerza';
   }
   changeP(): void {
     this.p = 90;
@@ -31,7 +31,7 @@ export class PoderComponent {
     this.v = 'El mismo';
   }
 
-  resetFrom1(): void {
+  resetFrom(): void {
     this.u = 'Movilidad y arma.';
     this.p = 20;
     this.v = 'Duende verde, Octropus y';
