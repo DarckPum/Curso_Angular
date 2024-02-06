@@ -3,20 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { CounterModule } from './counter/counter.module';
 import { HeroesModule } from './heroes/heroes.module';
-
 import { AppComponent } from './app.component';
-import { PoderComponent } from './Poderes/poder/poder.component';
+import { PoderesModule } from './Poderes/Poderes.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PoderComponent,
   ],
   imports: [
     BrowserModule,
     CounterModule,
     HeroesModule,
+    PoderesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
