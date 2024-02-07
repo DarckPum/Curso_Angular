@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./poder.component.css']
 })
 export class PoderComponent {
-  public d: string = 'Descripcion';
+  public d: string = 'Descripcion de detalles';
   public u: string = 'Movilidad y arma.';
   public p: number = 20;
   public v: string = 'Duende verde, Octropus y Venom';
@@ -18,7 +18,7 @@ export class PoderComponent {
 
   //Metodo
   getPoderDescripcion():string {
-    return `${ this.u } - ${ this.p } - ${ this.v }`
+    return `${ this.u } - ${ this.p } - ${ this.v }`;
   }
 
   chageU(): void {

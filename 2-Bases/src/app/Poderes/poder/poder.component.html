@@ -1,11 +1,11 @@
 <h1>{{ d }}</h1>
 
 <dl>
-  <td>Utilidad:</td>
+  <td>Habilidades:</td>
   <dd>{{ descu }}</dd>
 
-  <td>Peligro:</td>
-  <dd>{{ p }}</dd>
+  <td>Peligrosidad:</td>
+  <dd>{{ p }} %</dd>
 
   <td>Villanos:</td>
   <dd>{{ v }}</dd>
@@ -15,22 +15,21 @@
 </dl>
 
 <button
-  *ngIf="u !== 'Arma y fuerza'"
-  (click)="chageU()" class="btn btn-primary mx-3">
-  Cambiar Utilidad
+  *ngIf="u !== 'Armamento y fuerza'"
+  (click)="chageU()" class="btn btn-primary mx-2">
+  Cambiar Habilidades
 </button>
 
 <button
   *ngIf="p !== 90"
   (click)="changeP()" class="btn btn-primary mx-2">
-  Cambiar Peligro
+  Cambiar Peligrosidad
 </button>
 
 <button
   *ngIf="v !== 'El mismo'"
-  (click)="changeV()"
-  class="btn btn-primary">
-  Cambiar Villano
+  (click)="changeV()" class="btn btn-primary">
+  Cambiar Villanos.
 </button>
 
 <button
