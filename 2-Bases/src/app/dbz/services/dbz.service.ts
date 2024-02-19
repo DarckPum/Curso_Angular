@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { v4 as uudi } from 'uuid';
-
 import { Character } from '../interfaces/character.interface';
 
 @Injectable({ //Decorador de servicio
@@ -23,7 +22,6 @@ export class DbzService {
 
   addCharacter( character: Character): void{
     const newCharacter: Character = { id: uudi(), ...character};
-
     this.characters.push(newCharacter);
   }
 
