@@ -9,8 +9,14 @@ import { Component } from '@angular/core';
 export class SidebarComponent {
   //private GifsService
   constructor(private gifsService: GifsService){}
-  get tags(){
+
+  get tags(): string[] {
     return this.gifsService.tagsHistory;
   }
+
+  searchTag(tag: string): void{
+    this.gifsService.searchTag(tag);
+  }
+
 
 }
