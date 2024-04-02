@@ -8,17 +8,17 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule),
   },
   {
-    path: 'heroe',
+    path: 'heroes',
     loadChildren: () => import('./heroes/heroes.module').then( m => m.HeroesModule),
   },
   {
     path: '404',
-    component: Error404PageComponent
+    component: Error404PageComponent,
   },
   {
     path: '',
     redirectTo: 'heroes',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: '**',
